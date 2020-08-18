@@ -3,7 +3,7 @@ from numpy import *
 
 def loadDataSet():
     dataMat = []; labelMat = []
-    fr = open('testSet.txt')
+    fr = open('Logistic regression/testSet.txt')
     for line in fr.readlines():
         lineArr = line.strip().split()
         dataMat.append([1.0, float(lineArr[0]), float(lineArr[1])])
@@ -79,8 +79,8 @@ def classifyVector(inX, weights):
     else: return 0.0
 
 def colicTest():
-    frTrain = open('horseColicTraining.txt')
-    frTest = open('horseColicTest.txt')
+    frTrain = open('Logistic regression/horseColicTraining.txt')
+    frTest = open('Logistic regression/horseColicTest.txt')
     trainingSet = []; trainingLabels = []
     for line in frTrain.readlines():
         currLine = line.strip().split('\t')
