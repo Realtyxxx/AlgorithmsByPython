@@ -34,7 +34,7 @@ def hotPotato(namelist, num):
 
 print(hotPotato(["Bill","David","Susan","Jane","Kent","Brad"],7))
 
-# 设计一个良策都能插入删除的队列deque
+# 设计一个两侧都能插入删除的队列deque
 class Deque:
     def __init__(self):
         self.items = []
